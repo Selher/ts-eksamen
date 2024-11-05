@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo App</h1>
+      <form class="todo-form">
+        <input type="text" id="todo-input" placeholder="Add a new todo" />
+        <label for="todo-day">Day of the Week:</label>
+        <select id="todo-day">
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+        </select>
+          
+        <button type="submit">Add</button>
+        <button id="clear-completed-btn">Clear Completed</button>
+        <button id="toggle-all-btn">Clear All</button>
+      </form>
+      
+
+
+      
+      <ul class="todo-list" id="todo-list"></ul>
+      <p id="error-message" style="display: none;">Please enter a todo item</p>
+      <input type="color" id="colorPicker" />
+      <button id="theme-toggle-btn">Switch Theme</button>
+
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

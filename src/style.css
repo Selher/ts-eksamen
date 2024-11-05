@@ -1,0 +1,129 @@
+/* Default Light Theme */
+:root {
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+
+  --color-scheme: light dark;
+  --color: rgba(0, 0, 0, 0.87);
+  --background-color: #f4f4f4;
+
+  --font-synthesis: none;
+  --text-rendering: optimizeLegibility;
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing: grayscale;
+
+  --body-background-color: #f4f4f4;
+  --container-background-color: #fff;
+  --container-padding: 20px;
+  --container-border-radius: 5px;
+  --container-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --container-width: 300px;
+}
+
+/* Dark Theme */
+[data-theme='dark'] {
+  --color: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
+
+  --body-background-color: #333333;
+  --container-background-color: #444444;
+  --container-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+}
+
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--body-background-color);
+  color: var(--color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: var(--container-background-color);
+  padding: var(--container-padding);
+  border-radius: var(--container-border-radius);
+  box-shadow: var(--container-box-shadow);
+  width: 100%; /* Adjust this value as needed */
+  max-width: 800px; /* Set a maximum width if needed */
+  height: auto; /* Automatically adjust height based on content */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 10px; /* Space between items */
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px; /* Space between all items */
+  max-width: 500px; /* Limit the width if desired */
+  margin: auto; /* Center the form horizontally */
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.todo-form button {
+  padding: 10px;
+  border: none;
+  background: #0b0b0b;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  background: #f9f9f9;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.todo-item button {
+  border: none;
+  background: #696969;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.input-error {
+   background-color: #ffe6e6; 
+}
+
+#error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  display: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+
