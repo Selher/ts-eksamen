@@ -1,4 +1,4 @@
-name: Teamworkflow
+name: TeamWorkflow
 
 on:
   push:
@@ -20,4 +20,14 @@ jobs:
 
       - name: Build website
         run : npm run build
+
+      - name: FTP delivery
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server:
+          username:
+          password:
+          server-dir:
+          localdir: dist/
+         
 
