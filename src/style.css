@@ -128,3 +128,14 @@ h1 {
 
 
 
+
+/* Hover effect for all buttons */
+button:hover {
+  background-color: #6f7985; /* Change color on hover */
+  color: white;
+  transform: scale(1.05); /* Slightly scale the button */
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth transition */
+}
+
+
+
