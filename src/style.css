@@ -141,4 +141,6 @@ h1 {
 /* Apply the animation to the h1 element */
 h1 {
   animation: flyInFromLeft 1s ease-out; /* Duration and easing for smooth effect */
+  animation-delay: 0.3s; /* Add a slight delay before the animation starts */
 }
+
