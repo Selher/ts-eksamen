@@ -1,7 +1,7 @@
 import { Selector } from 'testcafe';
 
 fixture('Testing Hover Effect on Button')
-    .page('http://localhost:5173/todo/');  // Replace with the correct URL of your app
+    .page('https://test.salher01.dk/todo/');  // Replace with the correct URL of your app
 
   
 
