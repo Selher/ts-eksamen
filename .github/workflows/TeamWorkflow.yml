@@ -31,10 +31,10 @@ jobs:
           local-dir: dist/
 
          
-      -name: Install TestCafe
+      - name: Install TestCafe
         run: npm install -g testcafe
 
-      -name: Update APT
+      - name: Update APT
         run: apt-get update
 
       - name: Install Chromium
