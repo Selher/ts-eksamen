@@ -126,20 +126,5 @@ h1 {
   text-decoration: line-through;
 }
 
-/* CSS animation for the h1 element */
-@keyframes flyInFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
-/* Apply the animation to the h1 element */
-h1 {
-  animation: flyInFromLeft 1s ease-out; /* Duration and easing for smooth effect */
-}
 
