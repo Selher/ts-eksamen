@@ -60,7 +60,7 @@ jobs:
           name: dist
           path: dist/
 
-    - name: FTP deploy
+      - name: FTP deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ vars.FTP_SERVER }}
