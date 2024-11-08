@@ -54,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: Live
     steps:
-      -name: Load artifacts
+      - name: Load artifacts
         uses: actions/download-artifact@v3
         with:
           name: dist
