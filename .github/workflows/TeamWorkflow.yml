@@ -50,7 +50,7 @@ jobs:
           path: dist/
 
   deployment:
-    needs: intergration-delivery
+    needs: integration-delivery
     runs-on: ubuntu-latest
     environment: Live
     steps:
